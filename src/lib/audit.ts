@@ -36,9 +36,9 @@ export async function logAudit(
       action,
       entity,
       entityId,
-      metadata: metadata ?? {},
-      userId: session?.user?.id ?? 'anonymous',
-      tenantId: (session?.user?.tenantId as string) ?? null,
+      metadata: (metadata ?? {}) as any,
+      userId: (session?.user as any)?.id ?? 'anonymous',
+      tenantId: (session?.user as any)?.tenantId ?? null,
     },
   });
 }
