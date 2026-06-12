@@ -52,7 +52,7 @@
     "selected": "sélectionnée(s)",
     "allMatched": "Tout est lettré",
     "balanceError": "Le total Débit doit être égal au total Crédit.",
-    "matchedSuccess": "Lettrage réussi",
+    "matchedSuccess": "Lettrage réussi ! Réf: {ref}",
     "exportFec": "Exporter FEC",
     "date": "Date",
     "label": "Libellé",

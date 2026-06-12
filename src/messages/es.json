@@ -52,7 +52,7 @@
     "selected": "seleccionado(s)",
     "allMatched": "Todo conciliado",
     "balanceError": "El total del Debe debe igualar al Haber.",
-    "matchedSuccess": "Conciliación exitosa",
+    "matchedSuccess": "¡Conciliación exitosa! Ref: {ref}",
     "exportFec": "Exportar FEC",
     "date": "Fecha",
     "label": "Concepto",

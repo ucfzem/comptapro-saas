@@ -52,7 +52,7 @@
     "selected": "محدد",
     "allMatched": "تمت المطابقة بالكامل",
     "balanceError": "يجب أن يتساوى مجموع المدين مع مجموع الدائن.",
-    "matchedSuccess": "تمت المطابقة بنجاح",
+    "matchedSuccess": "تمت المطابقة بنجاح! المرجع: {ref}",
     "exportFec": "تصدير FEC",
     "date": "التاريخ",
     "label": "البيان",

@@ -52,7 +52,7 @@
     "selected": "selected",
     "allMatched": "All entries matched",
     "balanceError": "Total Debit must equal Total Credit.",
-    "matchedSuccess": "Matching successful",
+    "matchedSuccess": "Matching successful! Ref: {ref}",
     "exportFec": "Export FEC",
     "date": "Date",
     "label": "Label",
