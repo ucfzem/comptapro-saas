@@ -1,6 +1,7 @@
 import { Inter, Noto_Sans_Arabic } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
+import { ThemeProvider } from 'next-themes';
 import { routing } from '@/routing';
 import { AuthProvider } from '@/providers/auth-provider';
 import { Sidebar } from '@/components/sidebar';
@@ -32,6 +33,7 @@ export function generateStaticParams() {
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
   const messages = await getMessages();
+  const t = await getTranslations({ locale, namespace: 'navigation' });
   const isRtl = locale === 'ar';
   const fontClass = isRtl ? notoSansArabic.variable : inter.variable;
 
@@ -44,7 +46,8 @@ export default async function LocaleLayout({ children, params }: Props) {
     >
       <body className={`${fontClass} antialiased`}>
         <NextIntlClientProvider messages={messages}>
-          <AuthProvider>
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+            <AuthProvider>
             <div className="flex h-screen overflow-hidden bg-gray-50 dark:bg-slate-950">
               <Sidebar currentPath="/" />
               <div className="flex flex-1 flex-col overflow-hidden">
@@ -57,7 +60,8 @@ export default async function LocaleLayout({ children, params }: Props) {
                 </main>
               </div>
             </div>
-          </AuthProvider>
+            </AuthProvider>
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>
