@@ -107,7 +107,7 @@ export default function DashboardPage() {
     ],
   }
 
-  const chartOptions = {
+  const chartOptions: any = {
     responsive: true,
     plugins: {
       legend: { display: false },

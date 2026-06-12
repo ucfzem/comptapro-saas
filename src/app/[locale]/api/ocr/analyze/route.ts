@@ -28,7 +28,7 @@ export async function POST(req: Request) {
     data: {
       ...simulatedExtraction,
       suggestedAccount: suggested.accountCode,
-      suggestedLabel: suggested.label,
+      suggestedLabel: suggested.accountLabel,
     },
   });
 }
