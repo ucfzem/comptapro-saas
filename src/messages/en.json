@@ -1,4 +1,7 @@
 {
+  "navigation": {
+    "pageTitle": "ComptaPro"
+  },
   "nav": {
     "dashboard": "Dashboard",
     "saisie": "Data Entry & OCR",
@@ -12,68 +15,76 @@
   },
   "dashboard": {
     "title": "Dashboard",
-    "chartTitle": "Cash Flow Forecast",
-    "kpi1": "Net Cash",
-    "kpi2": "VAT Payable",
-    "kpi3": "Pending Entries",
-    "kpi4": "Active Clients"
+    "forecast": "Treasury Forecast",
+    "netCash": "Net Cash",
+    "vatPayable": "VAT Payable",
+    "pendingEntries": "Pending Entries",
+    "activeClients": "Active Clients",
+    "unmatched": "Unmatched Entries",
+    "noUnmatched": "No pending entries",
+    "date": "Date",
+    "label": "Label",
+    "account": "Account",
+    "debit": "Debit",
+    "credit": "Credit"
   },
   "saisie": {
     "title": "Data Entry & Automation",
-    "subtitle": "Scan your invoices and let AI pre-book them.",
     "dropzone": "Drop your invoice here (PDF, JPG, PNG)",
-    "processing": "Mindee OCR analysis in progress...",
-    "extracted": "AI-extracted data",
-    "fields": {
-      "date": "Date",
-      "supplier": "Supplier",
-      "amountHT": "Amount (excl. tax)",
-      "tva": "VAT",
-      "amountTTC": "Amount (incl. tax)",
-      "account": "Suggested PCG account"
-    },
+    "formats": "Accepted formats: PDF, PNG, JPG",
+    "analyzing": "Mindee OCR analysis in progress...",
+    "extractedData": "AI-extracted data",
+    "date": "Date",
+    "supplier": "Supplier",
+    "amountHT": "Net Amount",
+    "tva": "VAT",
+    "amountTTC": "Gross Amount",
+    "accountCode": "Suggested PCG Account",
     "confidence": "AI Confidence",
-    "validate": "Post Entry",
+    "comptabiliser": "Post Entry",
     "cancel": "Cancel",
-    "success": "Entry posted as double-entry bookkeeping!"
+    "success": "Entry posted with double-entry bookkeeping!"
   },
   "cloture": {
-    "title": "Reconciliation & Year-End Closing",
-    "subtitle": "Match entries and prepare the annual closing.",
-    "select": "Reconcile selection",
-    "empty": "All reconciled ✓",
-    "err": "Total Debit must equal Total Credit.",
-    "table": {
-      "date": "Date",
-      "label": "Label",
-      "account": "Account",
-      "debit": "Debit",
-      "credit": "Credit",
-      "matched": "Reconciliation"
-    },
-    "exportFEC": "Export FEC",
-    "fecReady": "FEC generated successfully"
+    "title": "Reconciliation & Closing",
+    "subtitle": "Match entries and prepare year-end closing.",
+    "matchSelection": "Match selected",
+    "selected": "selected",
+    "allMatched": "All entries matched",
+    "balanceError": "Total Debit must equal Total Credit.",
+    "matchedSuccess": "Matching successful",
+    "exportFec": "Export FEC",
+    "date": "Date",
+    "label": "Label",
+    "account": "Account",
+    "debit": "Debit",
+    "credit": "Credit",
+    "totalDebit": "Total Debit",
+    "totalCredit": "Total Credit"
   },
   "ia": {
     "title": "Legal & Tax Assistant",
-    "subtitle": "Ask tax doctrine questions. Sourced replies (BOFIP, CGI, LPF).",
-    "placeholder": "E.g.: Depreciation rate for a company car?",
+    "subtitle": "Ask tax doctrine questions. Sourced answers (BOFIP, CGI).",
+    "placeholder": "Ex: Vehicle depreciation rate?",
     "send": "Send",
-    "thinking": "Searching the document database...",
+    "thinking": "Searching knowledge base...",
     "sources": "Sources:",
-    "welcome": "Hello! I am your tax assistant. Ask me anything about tax legislation."
+    "welcome": "Hello! I am your tax assistant. Ask me anything about tax legislation.",
+    "ask": "Ask your question"
   },
   "security": {
     "title": "Security & Infrastructure",
     "subtitle": "Real-time infrastructure status.",
-    "enc": "Database Encryption",
-    "rls": "Multi-Tenant Isolation (RLS)",
-    "uptime": "API Uptime",
-    "backup": "Last Backup",
-    "status1": "Active (AES-256-GCM)",
-    "status2": "Applied (PostgreSQL RLS)",
-    "status3": "99.99%",
-    "status4": "Automatic (daily)"
+    "dbEncryption": "Database Encryption",
+    "tenantIsolation": "Multi-Tenant Isolation (RLS)",
+    "apiUptime": "API Uptime",
+    "backups": "Automatic Backups",
+    "automatic": "Automatic (daily)",
+    "auditLog": "Audit Log",
+    "user": "User",
+    "action": "Action",
+    "timestamp": "Timestamp",
+    "deployment": "Deployment & Infrastructure"
   },
   "common": {
     "loading": "Loading...",

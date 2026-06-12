@@ -32,8 +32,6 @@ export function generateStaticParams() {
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
   const messages = await getMessages();
-  const t = await getTranslations({ locale, namespace: 'navigation' });
-
   const isRtl = locale === 'ar';
   const fontClass = isRtl ? notoSansArabic.variable : inter.variable;
 
@@ -41,7 +39,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html
       lang={locale}
       dir={isRtl ? 'rtl' : 'ltr'}
-      className={`${fontClass} ${isRtl ? 'dark' : ''}`}
+      className={`${fontClass} dark`}
       suppressHydrationWarning
     >
       <body className={`${fontClass} antialiased`}>

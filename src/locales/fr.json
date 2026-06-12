@@ -1,4 +1,7 @@
 {
+  "navigation": {
+    "pageTitle": "ComptaPro"
+  },
   "nav": {
     "dashboard": "Tableau de Bord",
     "saisie": "Saisie & OCR",
@@ -12,47 +15,52 @@
   },
   "dashboard": {
     "title": "Tableau de Bord",
-    "chartTitle": "Trésorerie Prévisionnelle",
-    "kpi1": "Trésorerie Nette",
-    "kpi2": "TVA à Décaisser",
-    "kpi3": "Écritures en Attente",
-    "kpi4": "Clients Actifs"
+    "forecast": "Trésorerie Prévisionnelle",
+    "netCash": "Trésorerie Nette",
+    "vatPayable": "TVA à Décaisser",
+    "pendingEntries": "Écritures en Attente",
+    "activeClients": "Clients Actifs",
+    "unmatched": "Écritures non lettrées",
+    "noUnmatched": "Aucune écriture en attente",
+    "date": "Date",
+    "label": "Libellé",
+    "account": "Compte",
+    "debit": "Débit",
+    "credit": "Crédit"
   },
   "saisie": {
     "title": "Saisie & Automatisation",
-    "subtitle": "Numérisez vos factures et laissez l'IA pré-comptabiliser.",
     "dropzone": "Glissez-déposez votre facture (PDF, JPG, PNG)",
-    "processing": "Analyse OCR Mindee en cours...",
-    "extracted": "Données extraites par IA",
-    "fields": {
-      "date": "Date",
-      "supplier": "Fournisseur",
-      "amountHT": "Montant HT",
-      "tva": "TVA",
-      "amountTTC": "Montant TTC",
-      "account": "Compte PCG suggéré"
-    },
+    "formats": "Formats acceptés : PDF, PNG, JPG",
+    "analyzing": "Analyse OCR Mindee en cours...",
+    "extractedData": "Données extraites par IA",
+    "date": "Date",
+    "supplier": "Fournisseur",
+    "amountHT": "Montant HT",
+    "tva": "TVA",
+    "amountTTC": "Montant TTC",
+    "accountCode": "Compte PCG suggéré",
     "confidence": "Confiance IA",
-    "validate": "Comptabiliser",
+    "comptabiliser": "Comptabiliser",
     "cancel": "Annuler",
     "success": "Écriture comptabilisée en partie double !"
   },
   "cloture": {
     "title": "Lettrage & Travaux de Clôture",
     "subtitle": "Rapprochez les écritures et préparez la clôture annuelle.",
-    "select": "Lettrer la sélection",
-    "empty": "Tout est lettré ✓",
-    "err": "Le total Débit doit être égal au total Crédit.",
-    "table": {
-      "date": "Date",
-      "label": "Libellé",
-      "account": "Compte",
-      "debit": "Débit",
-      "credit": "Crédit",
-      "matched": "Lettrage"
-    },
-    "exportFEC": "Exporter FEC",
-    "fecReady": "FEC généré avec succès"
+    "matchSelection": "Lettrer la sélection",
+    "selected": "sélectionnée(s)",
+    "allMatched": "Tout est lettré",
+    "balanceError": "Le total Débit doit être égal au total Crédit.",
+    "matchedSuccess": "Lettrage réussi",
+    "exportFec": "Exporter FEC",
+    "date": "Date",
+    "label": "Libellé",
+    "account": "Compte",
+    "debit": "Débit",
+    "credit": "Crédit",
+    "totalDebit": "Total Débit",
+    "totalCredit": "Total Crédit"
   },
   "ia": {
     "title": "Assistant Juridique & Fiscal",
@@ -61,19 +69,22 @@
     "send": "Envoyer",
     "thinking": "Recherche dans la base documentaire...",
     "sources": "Sources :",
-    "welcome": "Bonjour ! Je suis votre assistant fiscal. Posez-moi une question sur la législation."
+    "welcome": "Bonjour ! Je suis votre assistant fiscal. Posez-moi une question sur la législation.",
+    "ask": "Posez votre question"
   },
   "security": {
     "title": "Sécurité & Infrastructure",
     "subtitle": "Statut en temps réel de votre infrastructure.",
-    "enc": "Chiffrement Base de Données",
-    "rls": "Isolation Multi-Tenant (RLS)",
-    "uptime": "Disponibilité API",
-    "backup": "Dernière Sauvegarde",
-    "status1": "Actif (AES-256-GCM)",
-    "status2": "Appliqué (PostgreSQL RLS)",
-    "status3": "99.99%",
-    "status4": "Automatique (quotidien)"
+    "dbEncryption": "Chiffrement Base de Données",
+    "tenantIsolation": "Isolation Multi-Tenant (RLS)",
+    "apiUptime": "Disponibilité API",
+    "backups": "Sauvegardes Automatiques",
+    "automatic": "Automatique (quotidien)",
+    "auditLog": "Journal d'Audit",
+    "user": "Utilisateur",
+    "action": "Action",
+    "timestamp": "Date",
+    "deployment": "Déploiement & Infrastructure"
   },
   "common": {
     "loading": "Chargement...",
