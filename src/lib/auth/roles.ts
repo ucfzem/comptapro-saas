@@ -1,8 +1,8 @@
 export enum Role {
-  CLIENT_PORTAL = 1,
-  VIEWER = 2,
-  ACCOUNTANT = 3,
-  ADMIN = 4,
+  CLIENT_PORTAL = 'CLIENT_PORTAL',
+  VIEWER = 'VIEWER',
+  ACCOUNTANT = 'ACCOUNTANT',
+  ADMIN = 'ADMIN',
 }
 
 export const ROLE_HIERARCHY: Record<Role, number> = {

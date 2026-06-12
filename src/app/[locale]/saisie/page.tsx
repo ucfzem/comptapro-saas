@@ -1,4 +1,5 @@
 'use client'
+export const dynamic = 'force-dynamic';
 
 import { useState, useRef, type DragEvent, type ChangeEvent } from 'react'
 import { useTranslations } from 'next-intl'

@@ -56,7 +56,7 @@ export async function generateFEC(
       tenantId,
       date: { gte: yearStart, lt: yearEnd },
     },
-    orderBy: [{ date: 'asc' }, { pieceNumber: 'asc' }],
+    orderBy: [{ date: 'asc' }],
   });
 
   if (entries.length === 0) {
@@ -92,13 +92,13 @@ export async function generateFEC(
       ACCOUNT_LABELS[accountCode] ?? `Compte ${accountCode}`;
 
     const row = [
-      escapeFECField(entry.journalCode ?? 'VT'),
+      escapeFECField((entry as any).journalCode ?? 'VT'),
       escapeFECField('Opérations diverses'),
       String(i + 1),
       formatFECDate(date),
       escapeFECField(accountCode),
       escapeFECField(accountLabel),
-      escapeFECField(entry.pieceNumber ?? `PIECE-${i + 1}`),
+      escapeFECField((entry as any).pieceNumber ?? `PIECE-${i + 1}`),
       escapeFECField(entry.label),
       debit.toFixed(2),
       credit.toFixed(2),

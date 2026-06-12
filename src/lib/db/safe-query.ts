@@ -46,8 +46,8 @@ export async function createJournalEntry(
         debit: input.debit,
         credit: input.credit,
         accountCode: input.accountCode,
-        journalCode: input.journalCode ?? 'VT',
-        pieceNumber: input.pieceNumber ?? null,
+        /* journalCode: input.journalCode ?? 'VT', */
+        /* pieceNumber: input.pieceNumber ?? null, */
       },
     });
     return entry as unknown as JournalEntryRow;
@@ -97,7 +97,7 @@ export async function getUnmatchedEntries(
     const where: Prisma.JournalEntryWhereInput = {
       tenantId,
       date: { gte: yearStart, lt: yearEnd },
-      matched: false,
+      isMatched: false,
     };
 
     const [entries, total] = await Promise.all([
