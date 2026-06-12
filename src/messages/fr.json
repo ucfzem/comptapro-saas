@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "dashboard": "Tableau de Bord",
+    "saisie": "Saisie & OCR",
+    "cloture": "Lettrage & Clôture",
+    "ia": "Assistant IA",
+    "security": "Sécurité"
+  },
+  "user": {
+    "name": "Cabinet Dupont",
+    "status": "En ligne"
+  },
+  "dashboard": {
+    "title": "Tableau de Bord",
+    "chartTitle": "Trésorerie Prévisionnelle",
+    "kpi1": "Trésorerie Nette",
+    "kpi2": "TVA à Décaisser",
+    "kpi3": "Écritures en Attente",
+    "kpi4": "Clients Actifs"
+  },
+  "saisie": {
+    "title": "Saisie & Automatisation",
+    "subtitle": "Numérisez vos factures et laissez l'IA pré-comptabiliser.",
+    "dropzone": "Glissez-déposez votre facture (PDF, JPG, PNG)",
+    "processing": "Analyse OCR Mindee en cours...",
+    "extracted": "Données extraites par IA",
+    "fields": {
+      "date": "Date",
+      "supplier": "Fournisseur",
+      "amountHT": "Montant HT",
+      "tva": "TVA",
+      "amountTTC": "Montant TTC",
+      "account": "Compte PCG suggéré"
+    },
+    "confidence": "Confiance IA",
+    "validate": "Comptabiliser",
+    "cancel": "Annuler",
+    "success": "Écriture comptabilisée en partie double !"
+  },
+  "cloture": {
+    "title": "Lettrage & Travaux de Clôture",
+    "subtitle": "Rapprochez les écritures et préparez la clôture annuelle.",
+    "select": "Lettrer la sélection",
+    "empty": "Tout est lettré ✓",
+    "err": "Le total Débit doit être égal au total Crédit.",
+    "table": {
+      "date": "Date",
+      "label": "Libellé",
+      "account": "Compte",
+      "debit": "Débit",
+      "credit": "Crédit",
+      "matched": "Lettrage"
+    },
+    "exportFEC": "Exporter FEC",
+    "fecReady": "FEC généré avec succès"
+  },
+  "ia": {
+    "title": "Assistant Juridique & Fiscal",
+    "subtitle": "Posez vos questions de doctrine fiscale. Réponses sourcées (BOFIP, CGI, LPF).",
+    "placeholder": "Ex: Taux d'amortissement véhicule de tourisme ?",
+    "send": "Envoyer",
+    "thinking": "Recherche dans la base documentaire...",
+    "sources": "Sources :",
+    "welcome": "Bonjour ! Je suis votre assistant fiscal. Posez-moi une question sur la législation."
+  },
+  "security": {
+    "title": "Sécurité & Infrastructure",
+    "subtitle": "Statut en temps réel de votre infrastructure.",
+    "enc": "Chiffrement Base de Données",
+    "rls": "Isolation Multi-Tenant (RLS)",
+    "uptime": "Disponibilité API",
+    "backup": "Dernière Sauvegarde",
+    "status1": "Actif (AES-256-GCM)",
+    "status2": "Appliqué (PostgreSQL RLS)",
+    "status3": "99.99%",
+    "status4": "Automatique (quotidien)"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "search": "Rechercher",
+    "noResults": "Aucun résultat",
+    "theme": "Thème",
+    "lang": "Langue"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "dashboard": "Panel de Control",
+    "saisie": "Registro & OCR",
+    "cloture": "Conciliación & Cierre",
+    "ia": "Asistente IA",
+    "security": "Seguridad"
+  },
+  "user": {
+    "name": "Despacho Dupont",
+    "status": "En línea"
+  },
+  "dashboard": {
+    "title": "Panel de Control",
+    "chartTitle": "Tesorería Prevista",
+    "kpi1": "Tesorería Neta",
+    "kpi2": "IVA a Pagar",
+    "kpi3": "Asientos Pendientes",
+    "kpi4": "Clientes Activos"
+  },
+  "saisie": {
+    "title": "Registro & Automatización",
+    "subtitle": "Digitalice sus facturas y deje que la IA precontabilice.",
+    "dropzone": "Arrastre su factura aquí (PDF, JPG, PNG)",
+    "processing": "Análisis OCR Mindee en curso...",
+    "extracted": "Datos extraídos por IA",
+    "fields": {
+      "date": "Fecha",
+      "supplier": "Proveedor",
+      "amountHT": "Base Imponible",
+      "tva": "IVA",
+      "amountTTC": "Importe Total",
+      "account": "Cuenta PCG sugerida"
+    },
+    "confidence": "Confianza IA",
+    "validate": "Contabilizar",
+    "cancel": "Cancelar",
+    "success": "¡Asiento contabilizado en partida doble!"
+  },
+  "cloture": {
+    "title": "Conciliación & Trabajos de Cierre",
+    "subtitle": "Cruce los asientos y prepare el cierre anual.",
+    "select": "Conciliar selección",
+    "empty": "Todo conciliado ✓",
+    "err": "El total del Debe debe ser igual al total del Haber.",
+    "table": {
+      "date": "Fecha",
+      "label": "Concepto",
+      "account": "Cuenta",
+      "debit": "Debe",
+      "credit": "Haber",
+      "matched": "Conciliación"
+    },
+    "exportFEC": "Exportar FEC",
+    "fecReady": "FEC generado correctamente"
+  },
+  "ia": {
+    "title": "Asistente Jurídico & Fiscal",
+    "subtitle": "Haga preguntas de doctrina fiscal. Respuestas con fuentes (BOFIP, CGI, LPF).",
+    "placeholder": "Ej: ¿Tipo de amortización para turismo?",
+    "send": "Enviar",
+    "thinking": "Buscando en la base documental...",
+    "sources": "Fuentes:",
+    "welcome": "¡Hola! Soy su asistente fiscal. Pregúnteme sobre legislación tributaria."
+  },
+  "security": {
+    "title": "Seguridad & Infraestructura",
+    "subtitle": "Estado en tiempo real de su infraestructura.",
+    "enc": "Cifrado de Base de Datos",
+    "rls": "Aislamiento Multiinquilino (RLS)",
+    "uptime": "Disponibilidad API",
+    "backup": "Última Copia de Seguridad",
+    "status1": "Activo (AES-256-GCM)",
+    "status2": "Aplicado (PostgreSQL RLS)",
+    "status3": "99.99%",
+    "status4": "Automática (diaria)"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "search": "Buscar",
+    "noResults": "Sin resultados",
+    "theme": "Tema",
+    "lang": "Idioma"
+  }
+}
